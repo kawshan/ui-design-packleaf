@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+
+
+<!--header area start-->
+<div class="row p-4" style="background-color: #F5EFFF; width: 100%; height: 100px ">
+    <h1 class="text-center">Item Master</h1>
+</div>
+<!--header area start-->
+
+
+<!--form area start-->
+<div class="card m-5 p-5">
+<form onsubmit="return false">
+
+<!--    first row start-->
+    <div class="row mt-5">
+
+        <div class="col-md-3"></div>
+        <div class="col-md-3">
+            <label for="selectItemCategory" class="form-label fw-bold"> Item Category  <i class="text-danger">*</i>  </label>
+            <select id="selectItemCategory" class="form-select text-start">
+                <option selected disabled>Select Item Category</option>
+            </select>
+        </div>
+        <div class="col-md-3">
+            <label for="txtItemPrice" class="form-label fw-bold">Item Price <i class="text-danger">*</i> </label>
+            <input type="text" id="txtItemPrice" class="form-control text-start" placeholder="Enter Item Price">
+        </div>
+        <div class="col-md-3"></div>
+
+    </div>
+<!--    first row end-->
+
+
+
+    <!--    second row start-->
+    <div class="row mt-5">
+
+        <div class="col-md-3"></div>
+        <div class="col-md-3">
+            <label for="txtItemCode" class="form-label fw-bold">Item Code <i class="text-danger">*</i> </label>
+            <input type="text" id="txtItemCode" class="form-control text-start" placeholder="Enter Item Code">
+
+        </div>
+        <div class="col-md-3">
+            <label for="txtItemName" class="form-label fw-bold">Item Name <i class="text-danger">*</i> </label>
+            <input type="text" id="txtItemName" class="form-control text-start" placeholder="Enter Item Name">
+        </div>
+        <div class="col-md-3"></div>
+
+    </div>
+    <!--    second row end-->
+
+
+
+    <!--    third row start-->
+    <div class="row mt-5">
+
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <label for="txtItemDescription" class="form-label fw-bold">Item Description <i class="text-danger">*</i> </label>
+            <input type="text" id="txtItemDescription" class="form-control text-start" placeholder="Enter item Description">
+        </div>
+        <div class="col-md-3">
+
+        </div>
+        <div class="col-md-3"></div>
+
+    </div>
+    <!--    third row end-->
+
+
+    <!--    forth row start-->
+    <div class="row mt-5">
+
+        <div class="col-md-3"></div>
+        <div class="col-md-3">
+            <label for="selectLaminate" class="form-label fw-bold">Laminate <i class="text-danger">*</i> </label>
+            <select id="selectLaminate" class="form-select text-start">
+                <option selected disabled>select an option</option>
+            </select>
+
+        </div>
+        <div class="col-md-3">
+            <label for="selectItemFoil" class="form-label fw-bold">Foil <i class="text-danger">*</i> </label>
+            <select id="selectItemFoil" class="form-select text-start">
+                <option>select an option</option>
+                <option value="1">yes</option>
+                <option value="0">no</option>
+            </select>
+        </div>
+        <div class="col-md-3"></div>
+
+    </div>
+    <!--    forth row end-->
+
+
+
+    <!--    fifth row start-->
+    <div class="row mt-5">
+
+        <div class="col-md-3"></div>
+        <div class="col-md-3">
+            <label for="txtItemColours" class="form-label fw-bold">NO Of Colours <i class="text-danger">*</i> </label>
+            <input type="text" id="txtItemColours" class="form-control text-start" placeholder="Enter NO Of Colours">
+
+        </div>
+        <div class="col-md-3">
+            <label for="txtPlateNumber" class="form-label fw-bold">Plate # <i class="text-danger">*</i> </label>
+            <input type="text" id="txtPlateNumber" class="form-control text-start" placeholder="Enter Plate Number">
+        </div>
+        <div class="col-md-3"></div>
+
+    </div>
+    <!--    fifth row end-->
+
+
+    <!--    sixth row start-->
+    <div class="row mt-5">
+
+        <div class="col-md-3"></div>
+        <div class="col-md-3">
+
+            <label for="selectItemSpotUV" class="form-label fw-bold">Spot UV <i class="text-danger">*</i> </label>
+            <select id="selectItemSpotUV" class="form-select text-start">
+                <option>select an option</option>
+                <option value="1">yes</option>
+                <option value="0">no</option>
+            </select>
+
+        </div>
+        <div class="col-md-3">
+
+        </div>
+        <div class="col-md-3"></div>
+
+    </div>
+    <!--    sixth row end-->
+
+
+<!--button row start-->
+    <div class="row mt-5">
+        <div class="col-md-3"></div>
+        <div class="col-md-3">
+            <button type="reset" class="btn btn-danger">reset</button>
+        </div>
+        <div class="col-md-3">
+            <button type="button" class="btn btn-warning">Update</button>
+        </div>
+        <div class="col-md-3">
+            <button type="reset" class="btn btn-success">Submit</button>
+        </div>
+    </div>
+<!--button row start-->
+
+
+
+
+</form>
+</div>
+<!--form area end-->
+
+<!--table area start-->
+<div class="card mt-5 p-5">
+    <table class="table table-hover table-striped">
+
+        <thead>
+                <th>#</th>
+                <th>Item Category</th>
+                <th>Item key</th>
+                <th>Item Price</th>
+                <th>Item Code</th>
+                <th>Item Name</th>
+                <th>Item Description</th>
+                <th>Item Colours</th>
+                <th>Item laminate</th>
+                <th>Item Foil</th>
+                <th>Item Spot UV</th>
+                <th>Action</th>
+        </thead>
+
+        <tbody>
+        </tbody>
+
+    </table>
+</div>
+<!--table area end-->
+
+
+
+</body>
+</html>
